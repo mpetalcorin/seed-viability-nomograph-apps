@@ -20,13 +20,25 @@ The interface allows users to:
 
 The application implements an Ellis–Roberts style viability framework in which the spread of seed deaths in time is represented by σ and longevity is linked to both seed moisture content and storage temperature. In the software, the storage-life parameter is estimated from the classical relationship: 
 
-log₁₀(σ) = Kᴱ − Cᵂlog₁₀(m) − Cᴴt − Cᑫt² 
+log₁₀(σ) = Kᴱ − Cᵂlog₁₀(m) − Cᴴt − Cᑫt²
+
+v = Kᵢ − p/σ
+
+p = (Kᵢ − v)σ
 
 where 
-- σ is the standard deviation of deaths in time
-- m is seed moisture content in percent,
-- t is temperature in degrees Celsius,
-- and Kᴱ, Cᵂ, Cᴴ, and Cᑫ are constants supplied either through presets or by manual user entry (Ellis & Roberts, 1980; Ellis, Hong, & Roberts, 2006).
+- σ = standard deviation of seed deaths in time, or storage-life parameter
+- v = viability after storage, expressed in probit units
+- Kᵢ = initial viability, in probit units
+- p = storage period
+- m = seed moisture content, in percent
+- t = storage temperature, in degrees Celsius
+- Kᴱ = species or seed-lot constant related to baseline longevity
+- Cᵂ = moisture sensitivity constant
+- Cᴴ = linear temperature constant
+- Cᑫ = quadratic temperature constant
+- t² = squared temperature term, used to capture the non-linear effect of temperature on longevity
+- Kᴱ, Cᵂ, Cᴴ, and Cᑫ are constants supplied either through presets or by manual user entry (Ellis & Roberts, 1980; Ellis, Hong, & Roberts, 2006).
 
 Predicted viability after a storage period p is derived in probit space as v = Kᵢ − p/σ, where Kᵢ denotes initial viability in probit units. 
 
