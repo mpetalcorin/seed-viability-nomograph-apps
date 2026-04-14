@@ -51,11 +51,11 @@ Primary inputs:
 - moisture content, percent
 - storage temperature, degrees Celsius
 - storage duration, days
-- K?
-- K?
-- C?
-- C?
-- C?
+- Kᵢ
+- Kᴱ
+- Cᵂ
+- Cᴴ
+- Cᑫ
 
 Profile input:
 - illustrative preset choice or custom parameter entry
@@ -76,29 +76,29 @@ Profile input:
 
 The application uses:
 
-log??(?) = K? ? C?log??(m) ? C?t ? C?t?
+log₁₀(σ) = Kᴱ − Cᵂlog₁₀(m) − Cᴴt − Cᑫt²
 
-v = K? ? p/?
+v = Kᵢ − p/σ
 
-p = (K? ? v)?
+p = (Kᵢ − v)σ
 
-? = standard deviation of seed deaths in time, or storage-life parameter
+σ = standard deviation of seed deaths in time, or storage-life parameter
 v = viability after storage, expressed in probit units
-K? = initial viability, in probit units
+Kᵢ = initial viability, in probit units
 p = storage period
 m = seed moisture content, in percent
 t = storage temperature, in degrees Celsius
-K? = species or seed-lot constant related to baseline longevity
-C? = moisture sensitivity constant
-C? = linear temperature constant
-C? = quadratic temperature constant
-t? = squared temperature term, used to capture the non-linear effect of temperature on longevity
+Kᴱ = species or seed-lot constant related to baseline longevity
+Cᵂ = moisture sensitivity constant
+Cᴴ = linear temperature constant
+Cᑫ = quadratic temperature constant
+t² = squared temperature term, used to capture the non-linear effect of temperature on longevity
 
 and a probit-style viability decline relationship based on initial viability and elapsed storage time.
 
 The app converts between viability percentage and a probit representation using numerical approximations to the normal cumulative distribution and its inverse.
 
-Because the equation is expressed in log?? form, relatively small changes in moisture or temperature can produce large differences in ?, which is consistent with the well-established observation that orthodox seed longevity is highly sensitive to drying state and storage temperature (Ellis & Roberts, 1980; Ellis, Hong, & Roberts, 2006).
+Because the equation is expressed in log₁₀ form, relatively small changes in moisture or temperature can produce large differences in σ, which is consistent with the well-established observation that orthodox seed longevity is highly sensitive to drying state and storage temperature (Ellis & Roberts, 1980; Ellis, Hong, & Roberts, 2006).
 
 ## Assumptions
 
