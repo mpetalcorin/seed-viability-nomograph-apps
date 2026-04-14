@@ -67,7 +67,7 @@ The defaults were selected as concept-demonstration values to show how the inter
 ## Distribution
 
 ### How is the project shared?
-The app is shared as source code in a GitHub repository and can be deployed as a web application through services such as Vercel.
+The app is shared as source code in a GitHub repository and is deployed as a web application through Vercel.
 
 ### On what devices can it run?
 The deployed application can be used on desktop browsers and mobile browsers, including iPhone and Android devices.
