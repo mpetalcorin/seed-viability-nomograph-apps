@@ -1,4 +1,6 @@
 # seed-viability-nomograph-apps
+https://seed-viability-nomograph.vercel.app
+
 A React and Vite web application for exploring seed longevity using a digital seed viability nomograph based on Ellis-Roberts style constants.
 <img width="1227" height="535" alt="Screenshot 2026-04-14 at 02 18 39" src="https://github.com/user-attachments/assets/98806eab-2699-4ec0-b429-de4f246382f0" />
 # Seed Viability Nomograph
