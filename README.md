@@ -1,6 +1,8 @@
 # seed-viability-nomograph-apps
 https://seed-viability-nomograph.vercel.app
 
+https://doi.org/10.31220/agriRxiv.2026.00426
+
 A React and Vite web application for exploring seed longevity using a digital seed viability nomograph based on Ellis-Roberts style constants.
 <img width="1227" height="535" alt="Screenshot 2026-04-14 at 02 18 39" src="https://github.com/user-attachments/assets/98806eab-2699-4ec0-b429-de4f246382f0" />
 # Seed Viability Nomograph
@@ -113,5 +115,5 @@ The preset constants in the current version are illustrative. They should not be
 - more advanced support for intermediate and recalcitrant seed scenarios
 
 ## Citation
-**Petalcorin, M.I.R.** (2026). A web-based digital seed viability nomograph for interactive estimation of seed longevity from moisture content, temperature, and storage duration. https://github.com/mpetalcorin/seed-viability-nomograph-apps
+**Petalcorin, M.I.R.** (2026). A web-based digital seed viability nomograph for interactive estimation of seed longevity from moisture content, temperature, and storage duration. Publication: agriRxiv. 2026. 20260188940. https://doi.org/10.31220/agriRxiv.2026.00426
 
